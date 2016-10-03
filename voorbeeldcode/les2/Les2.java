@@ -23,6 +23,10 @@ public class Les2
     Integer iw = new Integer(i);
     System.out.println("like finding the maximum range of an integer : "+ iw.MAX_VALUE);
 
+    System.out.println("you can also 'parse' a value of one datatype to another. Like prsing a String to an int");
+    int parsedInt = Integer.parseInt("1");//will parse the string value "1" into an int value;
+    String parsedString = Integer.toString(12);//will parse the int value of 12 into a String;
+
     System.out.println("examples of a reference variable, these are always stored on the HEAP");
     String firstName = "erwin";
     String lastName = new String("Henraat");
