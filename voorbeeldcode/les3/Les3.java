@@ -4,7 +4,7 @@ public class Les3
   {
     //Opdracht 1
     //maak een aantal variabelen aan
-    //voornaam, achternaam, leeftijd, gewicht, geslacht.
+    //voornaam, achternaam, leeftijd, geslacht.
     //vul waarden voor deze variabelen in
 
 
@@ -45,6 +45,19 @@ public class Les3
 
     //Opdracht 9
     //reken uit wat de restwaarde van 243 gedeeld door 34 is. Stuur het antwoord naar de commandline
+
+
+    //Extra Opdracht 1
+    //Maak een variabele aan waain je bij kunt houden of je zwanger bent. (Waar of niet waar)
+    //Controleer aan het begin van je code of het geslacht een vrouw of een man is.
+    //Zorg dat je niet zwanger kunt zijn als je een man bent.
+
+    //Extra Opdracht 2
+    //Zorg dat je niet kunt drinken als je jonger bent dan 18 of zwanger.
+
+    //Extra Opdracht 3
+    //Gebruik de Scanner zodat je bij het runnen van je applicatie zelf je naam , achternaam , leeftijd , geslacht en zwanger in kunt vullen.
+    //Test of je inderdaad niet kunt drinken als je zwanger bent of jonger dan 18
 
 
   }
