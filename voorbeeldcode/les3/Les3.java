@@ -24,7 +24,7 @@ public class Les3
     //Drink nu nog eens een slok bier om te kijken of de fles echt leeg is.
 
     //Opdracht 5
-    //De bier is op.
+    //Het bier is op.
     //Gelukkig kun je nog meer drinken
     //Maak eens een fles Whiskey en drink daar precies 3 slokken uit.
     //gebruik hiervoor niet 3x de zelfde regel code
