@@ -12,10 +12,18 @@ public class Les3
     //maak van het Alcohol datatype een flesbier aan
     //maak een if statement om te kijken of je alcohol mag drinken
     //roep de method flesbier.drink() aan als je oud genoeg bent
+    //Denk aan het patroon voor het aanmaken van een Referencee variabele
+    //Als je dit niet meer weet zoek je het op in de code van vorige les
 
     //Opdracht 3
     //Drink de fles bier leeg!
     //met de method empty() van het datatype Alcohol kun je checken of de fles leeg is
+/*
+    if(bierfles.empty() == true)
+    {
+
+    }
+*/
     //deze method geeft met behulp van een boolean aan of de fles leeg is of niet
     //Op de plek waar je deze method aanroept komt dus true of false te staan
     //Je mag maar maximaal 1x de drink() method aanroepen.
@@ -27,7 +35,13 @@ public class Les3
     //Het bier is op.
     //Gelukkig kun je nog meer drinken
     //Maak eens een fles Whiskey en drink daar precies 3 slokken uit.
-    //gebruik hiervoor niet 3x de zelfde regel code
+    //gebruik hiervoor niet 3x de zelfde regel code.
+    //Zoals hieronder is dus niet toegestaan
+    /*
+      whiskey.drink();
+      whiskey.drink();
+      whiskey.drink();
+    */
 
     //Opdracht 6
     //Je hebt nu redelijk wat code geschreven
