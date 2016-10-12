@@ -16,7 +16,6 @@ public class Les4{
   }
   private void assignments()
   { //hier start de "body" van de function
-
     //Dit is een function definition met de naam assignments.
     //private betekent dat deze function alleen in deze class Les4 beschikbaar is.
     //void betekent dat de function geen resultaat teruggeeft
@@ -54,14 +53,14 @@ public class Les4{
     //Zet de geactiveerde code in de function en roep in plaats daarvan de function aan.
     //LET OP! dat je de function definieert na het eind van de "body" van de huidige function
 
-    //Opdracht 5
-    //Het pad naar de soundfile is nu "sound/short_sample.wav" en kun je alleen aanpassen door hem in de function te weizigen
+    //Extra Opdracht 5
+    //Het pad naar de soundfile is nu "sound/short_sample.wav" en kun je alleen aanpassen door hem in de function te wijzigen
     //Maar wat nu als je 2 verschillende geluiden af wil spelen?
-    //vervang het pad met een variabele die je als argument aan de function mee kunt geven.
+    //vervang het pad met een String variabele die je als argument aan de function mee kunt geven.
     //Roep nu ook de playSound() function 2x aan.
     //1x met sample.wav en 1x met short_sample.wav.
 
-    //Opdracht 6
+    //Extra Opdracht 6
     //De function monthsToWholeYears() daarmee kun je van een aantal maanden berekenen hoeveel verstreken jaren dit zijn.
     //Bijvoorbeeld 23 maanden dat is 1 verstreken jaar.
     //24 maanden zijn 2 verstreken jaren etc....
