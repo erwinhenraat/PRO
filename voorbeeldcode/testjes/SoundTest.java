@@ -22,7 +22,7 @@ public class SoundTest{
       }
   }
   public void test(String filename){
-    //create soundfile
+    //create soundfile .mp3 files are not supported.
     File soundFile = new File(filename + ".wav");
 
     try{
