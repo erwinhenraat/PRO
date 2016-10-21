@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.IOException;
 import javax.sound.sampled.LineListener;
 import javax.sound.sampled.LineEvent;
+import java.net.URL;
 //Class that loads and plays a soundfile.
 public class SoundTest{
   //private boolean done = false;
@@ -23,10 +24,12 @@ public class SoundTest{
   }
   public void test(String filename){
     //create soundfile .mp3 files are not supported.
-    File soundFile = new File(filename + ".wav");
+    //File soundFile = new File(filename + ".wav");
+    URL url = (URL) this.getClass().getResource(filename+".wav");
+    //use url to find AudioInputStream
     try{
       //Get input from soundFile
-      AudioInputStream inputStream = AudioSystem.getAudioInputStream(soundFile);
+      AudioInputStream inputStream = AudioSystem.getAudioInputStream(url);
       DataLine.Info info = new DataLine.Info(Clip.class, inputStream.getFormat());
 
       try{
