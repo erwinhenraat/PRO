@@ -11,7 +11,7 @@ import javax.sound.sampled.LineListener;
 import javax.sound.sampled.LineEvent;
 //Class that loads and plays a soundfile.
 public class SoundTest{
-  private boolean done = false;
+  //private boolean done = false;
   public static void main(String[] args) {
       SoundTest self = new SoundTest();
       if(args.length == 0){
@@ -24,7 +24,6 @@ public class SoundTest{
   public void test(String filename){
     //create soundfile .mp3 files are not supported.
     File soundFile = new File(filename + ".wav");
-
     try{
       //Get input from soundFile
       AudioInputStream inputStream = AudioSystem.getAudioInputStream(soundFile);
@@ -37,6 +36,7 @@ public class SoundTest{
             //Open input in the Clip
             line.open(inputStream);
               //Check if Clip is finished
+/*
             line.addLineListener(new LineListener(){
               public void update(LineEvent le){
                 System.out.println("check end of sound");
@@ -48,13 +48,13 @@ public class SoundTest{
                 }
               }
             });
-
+*/
             //start the sound
             line.start();
 
-            //must keep current thread active until soundThread is finished
-            //There must be a another way to do this correctly:)
-            while(!done){System.out.print(".");}
+            //must keep current thread alive but sleeping until soundThread is finished
+            int ms = ((int) line.getMicrosecondLength())/1000;
+            Thread.sleep(ms);
 
         }//Exception when failing to open input stream
         catch (IOException e) {

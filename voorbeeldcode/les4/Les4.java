@@ -1,8 +1,8 @@
 import java.util.Scanner;
 import java.io.PrintWriter;
-import java.io.InputStream;
-import sun.audio.AudioStream;
-import sun.audio.AudioPlayer;
+import java.net.URL;
+import javax.sound.sampled.*;
+
 
 public class Les4{
   //Deze variabelen zijn "global" dit betekent dat ze in alle functions van deze class beschikbaar zijn
@@ -35,19 +35,21 @@ public class Les4{
     //Kloppen de gegevens ook die in de file staan?
 
     //Opdracht 4
-    //LET OP! Deze code geeft bij compilen 5 warnings. Dit is niet erg de code zal het wel doen.
-    //Deze warnings kun je voorlopig negeren.
-
-    /* haal deze regel weg om de code te activeren
+    //Uncomment het volgende blok met code
+    /*
     try{
-      InputStream is = this.getClass().getResourceAsStream("sound/short_sample.wav");
-      AudioStream as = new AudioStream(is);
-      AudioPlayer.player.start(as);
-    }catch(Exception e)
-    {
+      URL url = (URL) this.getClass().getResource("sound/short_sample.wav");
+      AudioInputStream input = AudioSystem.getAudioInputStream(url);
+      DataLine.Info info = new DataLine.Info(Clip.class, input.getFormat());
+      Clip clip = (Clip) AudioSystem.getLine(info);
+      clip.open(input);
+      clip.start();
+      int ms = ((int) clip.getMicrosecondLength())/1000;
+      Thread.sleep(ms);
+    }catch (Exception e) {
       System.out.println(e.toString());
     }
-    haal ook deze regel weg om de code te activeren */
+    */
 
     //Maak nu zelf een eigen function definition met de naam playSound();
     //Zet de geactiveerde code in de function en roep in plaats daarvan de function aan.
@@ -76,7 +78,7 @@ public class Les4{
   private void monthsToWholeYears(int maanden){
     float f = maanden / 12;
     int roundedDown = (int)(f-(f%1)); //afronden naar beneden met Modulo en omzetten van float naar int
-    System.out.println("aantal maanden afegrond naar hele jaren" + roundedDown);
+    System.out.println(maanden + " maanden afegrond naar hele jaren is " + roundedDown + " jaar.");
   }
   private void writeData()
   { //start van body
