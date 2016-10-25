@@ -35,7 +35,7 @@ public class Les4{
     //Uncomment het volgende blok met code
     /*
     try{
-      URL url = (URL) this.getClass().getResource("sound/short_sample.wav");
+      URL url = (URL) this.getClass().getResource("sound/sample.wav");
       AudioInputStream input = AudioSystem.getAudioInputStream(url);
       DataLine.Info info = new DataLine.Info(Clip.class, input.getFormat());
       Clip clip = (Clip) AudioSystem.getLine(info);
@@ -47,6 +47,7 @@ public class Les4{
       System.out.println(e.toString());
     }
     */
+
 
     //Maak nu zelf een eigen function definition met de naam playSound();
     //Zet de geactiveerde code in de function en roep in plaats daarvan de function aan.
