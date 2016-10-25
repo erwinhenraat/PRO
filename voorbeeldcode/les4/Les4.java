@@ -2,8 +2,6 @@ import java.util.Scanner;
 import java.io.PrintWriter;
 import java.net.URL;
 import javax.sound.sampled.*;
-
-
 public class Les4{
   //Deze variabelen zijn "global" dit betekent dat ze in alle functions van deze class beschikbaar zijn
   private String name;
@@ -12,7 +10,6 @@ public class Les4{
   public static void main(String[] args) {
     Les4 self = new Les4();//deze variabele is "local" dit betekent dat deze alleen in de main function beschikbaar is
     self.assignments();//de function assignments wordt uitgevoerd
-  //  JFXPanel jfxp = new JFXPanel();
   }
   private void assignments()
   { //hier start de "body" van de function
