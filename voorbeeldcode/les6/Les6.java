@@ -5,8 +5,8 @@ public class Les6{
   }
   public Les6()
   {
-    //showProblem();
-    showSolution();
+    showProblem();
+
   }
   private void showProblem()
   {
@@ -38,41 +38,4 @@ public class Les6{
       }
     }
   }
-  private void showSolution()
-  {
-    //programmeer hier de oplossing om 20 appels te kunnen eten.
-    int amount = 2;
-    Apple[] apples = new Apple[amount];
-    for(int i = 0; i < amount; i++){
-      apples[i] = new Apple();
-    }
-    Scanner scanner = new Scanner(System.in);
-    int current = 0;
-    while(true){
-      System.out.println("eat, look, next or exit?");
-      String input = scanner.next();
-
-      if(input.equals("eat")){
-        apples[current].takeBite();
-      }
-      else if(input.equals("look")){
-        apples[current].printAppleStatus();
-      }
-      else if(input.equals("exit")){
-        break;
-      }else if(input.equals("next")){
-        //ga naar de volgende appel
-        if(current < apples.length-1){
-          current++;
-        }else{
-          current = 0;
-        }
-        System.out.println("picked up the next apple.");
-      }else{
-        System.out.println("i don't understand.");
-      }
-    }
-
-  }
-
 }
