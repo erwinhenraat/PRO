@@ -10,10 +10,18 @@ public class Les6{
   }
   private void showProblem()
   {
-    //Met de onderstaande code kun je een appel extends
+    //Met de onderstaande code kun je een appel eten.
     //Wat nu als je meer appels wil kunnen eten?
     //Moet ik dan de complete code kopieren?
-    //Ik wil een mand met 20 appels die ik allemaal kan eten.
+
+    //Opdracht 1
+    //Lees de onderstaande code regel voor regel door en zet per regel in een comment wat de code doet
+    //Als je een regel niet begrijpt zet je er een vraagteken.
+    //Stel in de les vragen over deze regels
+
+    //Opdracht 2
+    //Pas de onderstaande code aan zodat je 3 appels tegelijk kunt eten.
+    //Je hoeft nog niet te switchen tussen de appels met het "next" commando.
 
     Apple apple1 = new Apple();
     Scanner scanner = new Scanner(System.in);
@@ -37,5 +45,20 @@ public class Les6{
         System.out.println("i don't understand.");
       }
     }
+
+    //Opdracht 3
+    //Maak een nieuwe functie aan met de naam solveProblem.
+    //Plak de code voor het eten van de 3 appels erin.
+    //Pas de code aan zodat je met behulp van een array 20 appels kunt eten met het "eat" commando.
+
+    //Opdracht 4
+    //Pas de code zo aan dat je ook 20 appels kunt bekijken met het "look" commando.
+
+    //Extra opdracht 5
+    //Verzin een manier om te switchen tussen de appels,
+    //zodat je niet alle appels tegelijk eet maar dat je ze 1 voor 1 kunt eten en bekijken.
+    //Gebruik hiervoor het "next" commando.
+
+
   }
 }
