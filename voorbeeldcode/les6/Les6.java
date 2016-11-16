@@ -3,21 +3,19 @@ public class Les6{
   public static void main(String[] args) {
       Les6 les6 = new Les6();
   }
-  public Les6()
-  {
+  public Les6(){
     showProblem();
 
   }
-  private void showProblem()
-  {
+  private void showProblem(){
     //Met de onderstaande code kun je een appel eten.
     //Wat nu als je meer appels wil kunnen eten?
     //Moet ik dan de complete code kopieren?
 
     //Opdracht 1
-    //Lees de onderstaande code regel voor regel door en zet per regel in een comment wat de code doet
-    //Als je een regel niet begrijpt zet je er een vraagteken.
-    //Stel in de les vragen over deze regels
+    //Lees de onderstaande code regel voor regel door en zet per regel, in een comment erachter, wat de code doet
+    //Als je een regel niet begrijpt zet je er een vraagteken achter.
+    //Stel in de les vragen over regels die je niet begrijpt.
 
     //Opdracht 2
     //Pas de onderstaande code aan zodat je 3 appels tegelijk kunt eten.
@@ -58,7 +56,6 @@ public class Les6{
     //Verzin een manier om te switchen tussen de appels,
     //zodat je niet alle appels tegelijk eet maar dat je ze 1 voor 1 kunt eten en bekijken.
     //Gebruik hiervoor het "next" commando.
-
 
   }
 }
