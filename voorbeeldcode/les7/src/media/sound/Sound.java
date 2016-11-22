@@ -9,9 +9,8 @@ public class Sound{
     this.waitForEnd = waitForEnd;
 
     try{
-      URL url = (URL) this.getClass().getResource(file+".wav");
+      URL url = (URL) this.getClass().getResource("../../resources/"+file+".wav");
       // how to get resources outside of the classpath root?
-
 
       try{
         AudioInputStream input = AudioSystem.getAudioInputStream(url);//file of url

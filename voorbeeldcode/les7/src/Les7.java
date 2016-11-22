@@ -2,8 +2,6 @@ import java.util.Scanner;
 import food.fruit.Apple;
 import media.sound.Sound;
 
-//De imports hierboven zorgen ervoor dat je de classes uit andere packages kunt gebruiken
-
 public class Les7{
   public static void main(String[] args) {
       Les7 lesson = new Les7();
