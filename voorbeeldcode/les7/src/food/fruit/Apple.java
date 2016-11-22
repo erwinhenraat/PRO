@@ -3,6 +3,7 @@ import java.awt.Color;
 import java.lang.Math;
 import javax.swing.Timer;
 import java.awt.event.*;
+import media.sound.Sound;
 public class Apple {
   int bites;
   int daysOld;
