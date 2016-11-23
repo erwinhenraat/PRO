@@ -31,7 +31,7 @@ import food.Food;
 //zie laatste slide voor de nieuwe structuur.
 
 //Opdracht 6
-//Vergroot je food array naar 15 en voed 5x je nieuwe voedselsoort toe.
+//Vergroot je food array naar 15 en voeg 5x je nieuwe voedselsoort toe.
 
 public class Les7{
   public static void main(String[] args) {
