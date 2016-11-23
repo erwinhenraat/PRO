@@ -57,7 +57,7 @@ public class Les7{
         break;
       }else if(input.equals("next")){
         //ga naar de volgende appel
-        if(current < food.length){
+        if(current < food.length-1){
           current++;
         }else{
           current = 0;
