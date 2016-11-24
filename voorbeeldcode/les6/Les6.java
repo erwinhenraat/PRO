@@ -5,7 +5,6 @@ public class Les6{
   }
   public Les6(){
     showProblem();
-
   }
   private void showProblem(){
     //Met de onderstaande code kun je een appel eten.
@@ -24,7 +23,7 @@ public class Les6{
     Apple apple1 = new Apple();
     Scanner scanner = new Scanner(System.in);
 
-    while(true){
+    while(true){//
       System.out.println("eat, look, next or exit?");
       String input = scanner.next();
 
