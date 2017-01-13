@@ -22,7 +22,7 @@ public class Main extends Application {
 
         Button[] buttons = new Button[5];
 
-        //button with anonymous eventhandler
+        //button with anonymous eventhandler which cannot be reused.
         buttons[0] = new Button("button 1");
         buttons[0].relocate(0,250);
         buttons[0].addEventHandler( MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>(){
@@ -31,7 +31,7 @@ public class Main extends Application {
             }
         });
 
-        //creating a definition for reusable eventhandler
+        //creating a variable with a reusable eventhandler
         EventHandler<MouseEvent> handler1 = new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
@@ -41,10 +41,10 @@ public class Main extends Application {
         //buttons with defined and reusable event handler
         buttons[1] = new Button("button 2");
         buttons[1].relocate(100,250);
-        buttons[1].addEventHandler(MouseEvent.MOUSE_CLICKED, handler1);
+        buttons[1].addEventHandler(MouseEvent.MOUSE_CLICKED, handler1);//using the eventhandler once
         buttons[2] = new Button("button 3");
         buttons[2].relocate(200,250);
-        buttons[2].addEventHandler(MouseEvent.MOUSE_CLICKED, handler1);
+        buttons[2].addEventHandler(MouseEvent.MOUSE_CLICKED, handler1);//using the same eventhandler again
 
         //button which uses a single line Lambda expression
         buttons[3] = new Button("button 4");
@@ -65,7 +65,7 @@ public class Main extends Application {
             buttonGroup.getChildren().add(buttons[i]);
         }
 
-        //Adding an event handler to a group activates is for all buttons
+        //Adding an event handler to a group activates it for all buttons
         buttonGroup.addEventHandler(MouseEvent.MOUSE_EXITED, (MouseEvent m) -> {
             t.clear();
         });
